@@ -216,7 +216,7 @@
     files.forEach(f => form.append('files', f));
 
     try{
-      const WEBHOOK = 'https://aawcr1400.app.n8n.cloud/webhook/invoice';
+      const WEBHOOK = 'https://aawcr1400.app.n8n.cloud/webhook/San-jose-invoice';
       const res = await fetch(WEBHOOK, { method:'POST', body:form });
       if(!res.ok) throw new Error();
       successMsg.style.display='block';
